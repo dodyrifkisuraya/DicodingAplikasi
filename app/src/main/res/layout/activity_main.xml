@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/dicoding" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnProfil"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/dp"
+                    app:civ_border_color="@color/putih"
+                    app:civ_border_width="2dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:clipToPadding="false"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="10dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="Kelas Terpopuler"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/lightgrey" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Kelas dengan #peminat terbanyak di dicoding academy."-->
+        <!--android:textColor="@android:color/darker_gray"-->
+        <!--android:textSize="13sp" />-->
+
+
+        <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp">-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/androExpert"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="220dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:clickable="true"-->
+        <!--android:foreground="?android:attr/selectableItemBackground"-->
+        <!--app:cardCornerRadius="10dp">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="160dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/androexpert" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="Menjadi Android Developer Expert"-->
+        <!--android:textSize="13sp"-->
+        <!--android:textStyle="bold" />-->
+
+
+        <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/AzureCloud"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="220dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:clickable="true"-->
+        <!--android:foreground="?android:attr/selectableItemBackground"-->
+        <!--app:cardCornerRadius="10dp">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="160dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/androexpert" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="Menjadi Azure Cloud Developer"-->
+        <!--android:textSize="13sp"-->
+        <!--android:textStyle="bold" />-->
+
+
+        <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--</LinearLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="Semua Kelas"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_kelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/list_kelas">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

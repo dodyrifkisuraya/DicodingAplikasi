@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailKelas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_thumnail"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/androexpert" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_biaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp. 000,00"
+                android:textColor="@color/titleklas"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_namaKelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Kelas"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_penyusun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penyusun : Dody"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/titleklas"
+                android:text="D A F T A R  S E K A R A N G"
+                android:textColor="@color/putih" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:text="Diskripsi"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/img_detail"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/androexpert" />
+
+            <TextView
+                android:id="@+id/tv_detailDiskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diskripsi Diskripsi Diskripsi Diskripsi Diskripsi DiskripsiDiskripsiv v vDiskripsivv Diskripsi"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
